@@ -51,9 +51,20 @@ const anchoPantalla = window.innerWidth;
 let header = document.querySelector('header');
 let navTexts = document.querySelectorAll('.nav-texts');
 
-addEventListener('scroll', ()=>{
-    if (scroll != 0 && anchoPantalla > 800){
-        header.style.height="60px"
-        navTexts.style.fontSize="";
-    }
+
+
+    addEventListener('scroll', ()=>{
+        let scrollY = window.scrollY;
+        if (scrollY != 0 && anchoPantalla > 800){
+                header.style.height="60px"
+                navTexts.forEach((i)=>{
+                    i.style.fontSize="17px";
+                })
+            }
+        else{
+            header.style.height="80px"
+            
+        }
 })
+
+
