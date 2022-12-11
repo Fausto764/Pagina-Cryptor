@@ -11,13 +11,14 @@ body{
 }
 header{
     width: 100%;
-    height: 80px;
+    height: 100px;
     background-color: #fd061f;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
     position: fixed;
+    transition: height 2s;  
 }
 .logo{
     font-size: 28px;
@@ -47,20 +48,85 @@ header{
     color: #11101b;
     background-color: #fefefe;
 }
+
+
+
+/* slider */
+.container-slider{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;    
+    overflow-x: hidden;
+    border-right: 5px solid #fd061f;
+    border-bottom: 5px solid #fd061f;
+    position: relative;
+    top: 150px;
+}
+.slider{
+display: flex;
+width: 400%; /*para mas imagenes se tiene que incrementar */
+height: 400px;
+margin-left: -100%;
+}
+.slider-section{
+width: 100%;
+}
+.slider-section img{
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+image-rendering: optimizeQuality;
+}
+
+.slider-button{
+position: absolute;
+width: 40px;
+height: 40px;
+background-color: rgba(255, 255, 255, 0.7);
+top: 50%;
+transform: translateY(-50%);
+font-size: 30px;
+font-family: monospace;
+text-align: center;
+border-radius: 50%;
+cursor: pointer;
+margin: 0;
+padding :0;
+color :#000;
+}
+.slider-button:hover{
+background-color: #fff;
+}
+.slider-button-right{
+right: 10px;
+}
+.slider-button-left{
+left: 10px;
+}
+
+
+/* media querys */
 @media  only screen and (max-width: 1320px){
     header{
         padding: 0 50px;
+        z-index: 1;
     }
 }
 @media  only screen and (max-width: 1100px){
     header{
         padding: 0 30px;
+        z-index: 1;
+    }
+    .slider{
+        max-height: 350px;
+        
     }
 }
-@media  only screen and (max-width: 900px){
+@media  only screen and (max-width: 800px){
     .hamburger{
         display: block;
-        cursor: pointer;
+        cursor: pointer;    
 
     }
     .hamburger .line {
@@ -79,19 +145,19 @@ header{
         width: 100vw;
         background-color: #fd061f;
         transition: 0.5s;
-        overflow: hidden;
+        overflow-x: hidden;
         border-top: 1px solid #fefefe;
     }
     .nav-bar.active{
         height: 450px;
     }
     .nav-bar ul{
-    display: block;
-    width: fit-content;
-    margin: 80px auto 0 auto;
-    text-align: center;
-    transition: 0.5s;  
-    opacity: 0; 
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;  
+        opacity: 0; 
     }
     .nav-bar.active ul{
         opacity: 1;
@@ -99,4 +165,38 @@ header{
     .nav-bar ul li a {
         margin-bottom: 12px;
     }
+    .slider{
+        max-height: 250px;
+
+    }
+    .container-slider{
+        top: 200px ;
+    }
+    
+}
+
+
+
+
+.inicio-info{
+    height: 200px;
+    width: 90%;
+    margin: auto;
+}
+.inicio-info h1{
+    padding-top: 100px;
+    color: #11101b;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+.inicio-info p{
+    padding-top: 20px;
+    color: #11101b;
+    font-size: 20px;
+    
+}
+.inicio-info a{
+    padding-top: 5px;
+    color: #fd061f;
 }
