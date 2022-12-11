@@ -49,7 +49,7 @@ const altoPantalla = window.innerHeight;
 const anchoPantalla = window.innerWidth;
 // let scrollDown = getBoundingClientRect().top;
 let header = document.querySelector('header');
-let navTexts = document.querySelectorAll('.nav-texts');
+navTexts = document.querySelectorAll('.nav-texts');
 
 
 

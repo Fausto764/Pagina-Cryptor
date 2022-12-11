@@ -10,7 +10,7 @@ body{
     background-color: #fefefe;
 }
 header{
-    width: 100%;
+    min-width: 100%;
     height: 90px;
     background-color: #fd061f;
     display: flex;
@@ -21,9 +21,25 @@ header{
     transition: height 2s;  
 }
 .logo{
+    top: 10px;
     font-size: 28px;
     font-weight: bold;
     color: #fefefe;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+}
+.logo img{
+    width: 60px; 
+    min-height: 45px;
+    padding-top: 2px;
+}
+.logo h1{
+    font-weight: 400;
+    font-size: 30px;
+    font-family: "Poppins";
 }
 .hamburger{
     display: none;
@@ -44,10 +60,11 @@ header{
     color: #11101b;
     background: #fefefe;
 }
-.nav-bar ul li a.active{
-    color: #11101b;
-    background-color: #fefefe;
+.nav-texts-active {
+    color: #11101b !important;
+    background-color: #fefefe ;
 }
+
 
 
 
@@ -59,50 +76,51 @@ header{
     overflow-x: hidden;
     border-right: 5px solid #fd061f;
     border-bottom: 5px solid #fd061f;
+    border-left: 5px solid #fd061f;
     position: relative;
     top: 150px;
 }
 .slider{
-display: flex;
-width: 400%; /*para mas imagenes se tiene que incrementar */
-height: 400px;
-margin-left: -100%;
+    display: flex;
+    width: 400%; /*para mas imagenes se tiene que incrementar */
+    height: 400px;
+    margin-left: -100%;
 }
 .slider-section{
-width: 100%;
+    width: 100%;
 }
 .slider-section img{
-display: block;
-width: 100%;
-height: 100%;
-object-fit: cover;
-image-rendering: optimizeQuality;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: optimizeQuality;
 }
 
 .slider-button{
-position: absolute;
-width: 40px;
-height: 40px;
-background-color: rgba(255, 255, 255, 0.7);
-top: 50%;
-transform: translateY(-50%);
-font-size: 30px;
-font-family: monospace;
-text-align: center;
-border-radius: 50%;
-cursor: pointer;
-margin: 0;
-padding :0;
-color :#000;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0;
+    padding :0;
+    color :#000;
 }
 .slider-button:hover{
-background-color: #fff;
+    background-color: #fff;
 }
 .slider-button-right{
-right: 10px;
+    right: 10px;
 }
 .slider-button-left{
-left: 10px;
+    left: 10px;
 }
 
 
@@ -200,3 +218,45 @@ left: 10px;
     padding-top: 5px;
     color: #fd061f;
 }
+
+
+/* footer */
+
+.footer{
+    height: 120px;
+    width: 100%;
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    max-width: 100%;
+    background-color: #11101b;
+    bottom: 0;
+    color: #fefefe ;
+    margin-top: 300px;
+    height: 120px;
+    border-bottom: 2px solid #fd061f;
+}
+    
+.footer-ul{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #fefefe;
+}
+.footer-copyright h4{
+    font-weight: 200;
+}
+.footer-li i{
+    color: #fefefe;
+    padding-left: 40px;
+    font-size: 20px;
+}
+.footer-li i:last-child{
+    color: #fefefe;
+    padding: 0 20px 0 20px;
+    font-size: 15px;
+}
+
