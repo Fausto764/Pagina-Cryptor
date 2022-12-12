@@ -1,11 +1,9 @@
 //nav
-
-hamburguer  = document.querySelector('.hamburger');
-hamburguer.onclick = function(){
-    navBar = document.querySelector('.nav-bar');
-    navBar.classList.toggle('active');
-}
-
+    let hamburguer  = document.querySelector('.hamburger');
+    let navBar = document.querySelector('.nav-bar');
+    hamburguer.onclick = function(){
+        navBar.classList.toggle('active');
+    }
 
 
 
@@ -45,14 +43,11 @@ btnLeft.addEventListener('click', prev);
 
 //scroll effect
 
-const altoPantalla = window.innerHeight;
-const anchoPantalla = window.innerWidth;
-// let scrollDown = getBoundingClientRect().top;
-let header = document.querySelector('header');
-navTexts = document.querySelectorAll('.nav-texts');
-
-
-
+    const altoPantalla = window.innerHeight;
+    const anchoPantalla = window.innerWidth;
+    // let scrollDown = getBoundingClientRect().top;
+    let header = document.querySelector('header');
+    let navTexts = document.querySelectorAll('.nav-texts');
     addEventListener('scroll', ()=>{
         let scrollY = window.scrollY;
         if (scrollY != 0 && anchoPantalla > 800){
@@ -65,6 +60,5 @@ navTexts = document.querySelectorAll('.nav-texts');
             header.style.height="80px"
             
         }
-})
-
+    })
 
