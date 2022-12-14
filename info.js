@@ -27,3 +27,18 @@ hamburguer.onclick = function(){
         }
     })
 
+//scroll appear
+
+let pElement = document.querySelector('.p-appear');
+let pTop =  pElement.getBoundingClientRect().top;
+console.log(pTop);
+
+addEventListener('scroll', ()=>{
+    if( pTop >= 320){
+        pElement.style.opacity="1";
+        pElement.style.margin="0";
+    }
+    else{
+        console.log("no se pudo")
+    }
+})

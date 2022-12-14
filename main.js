@@ -7,7 +7,7 @@
 
 
 
-//slider
+//slider 1 
 
 const slider = document.querySelector('#slider');
 let sliderSection = document.querySelectorAll('.slider-section');
@@ -62,3 +62,41 @@ btnLeft.addEventListener('click', prev);
         }
     })
 
+// slider 2
+
+
+
+const slider2 = document.querySelector('.section-sticky-container');
+let sliderSection2 = document.querySelectorAll('.sticky-item');
+let sliderSectionLast2 = sliderSection2[sliderSection2.length -1];
+
+const btnLeft2 = document.querySelector('.btn3');
+const btnRight2 = document.querySelector('.btn4');
+
+function next2 (){
+    let sliderSectionFirst2 = document.querySelectorAll('.sticky-item')[0];
+    slider2.style.marginLeft="-100%";
+    slider2.style.transition = "all 0.5s";
+    setTimeout( ()=>{
+        slider2.style.transition="none";
+        slider2.insertAdjacentElement('beforeend', sliderSectionFirst2);
+        slider2.style.marginLeft = "-50%";
+    },500);
+
+}
+function prev2(){
+    let sliderSection2 = document.querySelectorAll('.sticky-item');
+    let sliderSectionLast2 = sliderSection2[sliderSection2.length -1];
+    slider2.style.marginLeft="0";
+    slider2.style.transition = "all 0.5s";
+    setTimeout( ()=>{
+        slider2.style.transition="none";
+        slider2.insertAdjacentElement('afterbegin', sliderSectionLast2);
+        slider2.style.marginLeft = "-50%";
+    },500);
+}
+btnRight.addEventListener('click', next);
+btnLeft.addEventListener('click', prev);
+
+btnRight2.addEventListener('click', next2);
+btnLeft2.addEventListener('click', prev2);
