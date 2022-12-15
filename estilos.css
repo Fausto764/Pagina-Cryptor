@@ -508,7 +508,8 @@ header{
 
     }
     .footer-bottom{
-        margin-top: 250px;
+        margin: 0;
+        bottom: 100px;
     }
     .sticky-item p{
         font-size: 10px;
@@ -535,6 +536,7 @@ header{
     }
     .p-appear{
         font-size: 15px;
+        padding-bottom: 100px;
     }
     .productos-section h2{
         font-size: 25px;
@@ -545,6 +547,7 @@ header{
     }
     .contacto-contenido{
         width: 75%;
+        margin-bottom: 100px;
     }
 }
 
