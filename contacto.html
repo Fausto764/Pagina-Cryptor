@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8b442c6aa4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="nuevasimagenes/logo/logo.png"> 
+            <h1>CRYPTOR</h1>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html" class=" nav-texts">INICIO</a></li>
+                <li><a href="informacion.html" class="nav-texts">INFORMACION</a></li>
+                <li><a href="productos.html" class="nav-texts">PRODUCTOS</a></li>
+                <li><a href="contacto.html" class="nav-texts-active nav-texts">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contacto-container">
+        <h3>Podes contactarnos mediante mail!</h3>
+        <div class="contacto-contenido">
+            <form id="form" action="" class="form">
+                <h3 class="tag"><span>Contactanos</span></h3>
+                <label  for="name">Nombre Completo <span>*</span></label>
+                <input name="name" required type="text" id="name" placeholder="Juan">
+                <label for="email">Correo Electronico<span>*</span></label>
+                <input name="email" required type="text" id="email" placeholder="juan@gmail.com">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+                <button type="submit" class="btn primary full">Enviar Mensaje</button>
+            </form>
+            <a href="mailto:me@faustogarcia1357.com" id="sendmailbut">mail to</a>
+        </div>
+    </section>
+    <footer>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                <h4>© Copyright 2022 Cryptor</h4>
+            </div>
+            <ul class="footer-ul">
+                <li class="footer-li"><a href="https://www.instagram.com/alarmascryptor/" target="BLANK__"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="footer-li"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="footer-li"><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li class="footer-li"><i class="fa-solid fa-phone"></i></li>
+
+            </ul>
+
+        </div>
+    </footer>
+    <script src="contacto.js"></script>
+</body>
+</html>
