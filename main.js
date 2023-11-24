@@ -5,7 +5,11 @@
         navBar.classList.toggle('active');
     }
 
-
+//link whatsapp
+ function irAPagina2() {
+      // Cambiar la ubicación a la Página 2
+      window.location.href = ' https://w.app/nlsdPL';
+    }
 
 //slider 1 
 
