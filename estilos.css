@@ -556,6 +556,6 @@ header {
 @media only screen and (max-width: 400px) {
   .footer-llamanos {
     bottom: -56rem;
-    right: 40%;
+    right: 35%;
   }
 }
